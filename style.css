@@ -51,37 +51,99 @@ body {
   color: hsl(25, 47%, 15%);
   margin-bottom: 3rem;
 }
+.week-balance p {
+  padding-top: 1rem;
+}
 
 .week-balance-chart {
   height: 24rem;
   border-bottom: 0.1rem solid hsl(28, 10%, 53%);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding-bottom: 6rem;
   color: hsl(28, 10%, 53%);
   text-align: center;
-
   align-items: flex-end;
+}
+.box-wrapper {
+  position: relative;
 }
 
 .box {
   height: 100%;
-  width: 4rem;
+  width: 5rem;
   background-color: hsl(10, 79%, 65%);
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
-.month-balance {
+.box:hover {
+  background-color: hsl(10, 92%, 80%);
+}
+
+.money {
+  display: none;
+  background-color: hsl(25, 47%, 15%);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: -5rem;
+  left: -1rem;
+}
+
+.month-balance p,
+h1 {
   color: hsl(25, 47%, 15%);
   font-weight: 700;
 }
 
 .month-balance p {
+  margin-top: auto;
+}
+
+.month-balance span {
   color: hsl(28, 10%, 53%);
   font-weight: 400;
   font-size: 1.8rem;
 }
-.month-balance h3 {
-  font-size: 1.8rem;
+
+@media (max-width: 500px) {
+  .my-balance {
+    padding: 2rem;
+  }
+
+  .week-balance {
+    padding: 2rem;
+  }
+
+  .week-balance h2 {
+    font-size: 2.4rem;
+  }
+  .week-balance p {
+    font-size: 1.4rem;
+  }
+
+  .box {
+    width: 3rem;
+  }
+
+  .money {
+    padding: 0.4rem;
+    font-size: 1.3rem;
+    top: -4rem;
+  }
+
+  .month-balance h1 {
+    font-size: 2.4rem;
+  }
+
+  .month-balance p {
+    font-size: 1.5rem;
+  }
+
+  .month-balance span {
+    font-size: 1.5rem;
+  }
 }
 
 .attribution {
