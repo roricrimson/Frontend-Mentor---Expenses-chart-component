@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  font-size: 1.8rem;
+  font-family: "DM Sans", sans-serif;
+  gap: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-balance {
+  background-color: hsl(10, 79%, 65%);
+  color: white;
+  width: 90%;
+  max-width: 54rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+.week-balance {
+  background-color: white;
+  width: 90%;
+  max-width: 54rem;
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+.week-balance h2 {
+  color: hsl(25, 47%, 15%);
+  margin-bottom: 3rem;
+}
+
+.week-balance-chart {
+  height: 24rem;
+  border-bottom: 0.1rem solid hsl(28, 10%, 53%);
+  margin-bottom: 3rem;
+  padding-bottom: 6rem;
+  color: hsl(28, 10%, 53%);
+  text-align: center;
+
+  align-items: flex-end;
+}
+
+.box {
+  height: 100%;
+  width: 4rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.5rem;
+}
+
+.month-balance {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+}
+
+.month-balance p {
+  color: hsl(28, 10%, 53%);
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.month-balance h3 {
+  font-size: 1.8rem;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem;
+  font-size: 12px;
+}
